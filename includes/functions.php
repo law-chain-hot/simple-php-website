@@ -51,9 +51,10 @@ function nav_menu($sep = ' | ')
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Home';
+    $page1 = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Home';
 
-    echo ucwords(str_replace('-', ' ', $page));
+    // echo ucwords(str_replace('-', ' ', $page));
+    echo $page1;
 }
 
 /**
